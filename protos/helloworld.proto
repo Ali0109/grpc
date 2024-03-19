@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service Greeter {
+  rpc Student (StudentRequest) returns (StudentReply) {}
+}
+
+message StudentRequest {
+  string name = 1;
+  int32 age = 2;
+}
+
+message StudentReply {
+  int32 course = 1;
+}
